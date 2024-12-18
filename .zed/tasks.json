@@ -1,0 +1,11 @@
+[
+    {
+    "label": "test",
+    "command": "cargo",
+    "args": ["test"],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "no_focus",
+    "hide": "never"
+}
+]
