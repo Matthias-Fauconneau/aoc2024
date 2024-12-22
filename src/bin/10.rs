@@ -43,7 +43,7 @@ pub fn part_two(input: &str) -> Option<usize> {
         fn walk(peaks: &mut Vec<[isize; 2]>, map: &[char], [w,h]: [isize; 2], [x,y]: [isize; 2], height: char, visited: &mut [char]) {
             visited[(y*w+x) as usize] = char::from_u32('𝟎' as u32+char::to_digit(height, 10).unwrap()).unwrap();
             if height == '9' {
-                /*if !peaks.contains(&[x,y])*/ { peaks.push([x,y]) }
+                peaks.push([x,y]);
                 return;
             }
             for [dx,dy] in [[0,-1],[-1,0],[1,0],[0,1]] {
